@@ -9,85 +9,102 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="Logo da ONG Solidária">
-            <h1>ONG Solidária</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos Sociais</a></li>
-                <li><a href="cadastro.html">Cadastre-se</a></li>
-                <li><a href="index.html#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo da ONG Solidária">
+                <h1>ONG Solidária</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label> <!--https://www.w3schools.com/charsets/ref_utf_symbols.asp-->
+                <ul class="nav-menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li class="has-submenu">
+                        <a href="projetos.html">Projetos Sociais</a>
+                        <ul class="submenu">
+                            <li><a href="#voluntariado">Voluntariado</a></li>
+                            <li><a href="#doacoes">Doações</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>    
     </header>
 
     <main>
         <section id="projetos" aria-labelledby="projetos-heading">
-            <h2 id="projetos-heading">Nossos Projetos de Impacto Social</h2>
-            <p>Conheça as iniciativas que transformam a vida de milhares de pessoas em diversas comunidades.</p>
+            <div class="container">
+                <h2 id="projetos-heading">Nossos Projetos de Impacto Social</h2>
+                <p>Conheça as iniciativas que transformam a vida de milhares de pessoas em diversas comunidades.</p>
 
-            <article class="projeto">
-                <h3>Projeto Educação para o Futuro</h3>
-                <figure>
-                    <img src="img/projeto-educacao.jpg" alt="Crianças estudando em sala de aula">
-                    <figcaption>Apoie a educação de crianças e adolescentes.</figcaption>
-                </figure>
-                <p>Focamos em oferecer reforço escolar e atividades extracurriculares para garantir um futuro promissor para as novas gerações.</p>
-                <a href="#" class="saiba-mais">Saiba Mais</a>
-            </article>
+                <article class="projeto">
+                    <h3>Projeto Educação para o Futuro</h3>
+                    <figure>
+                        <img src="img/projeto-educacao.jpg" alt="Crianças estudando em sala de aula">
+                        <figcaption>Apoie a educação de crianças e adolescentes.</figcaption>
+                    </figure>
+                    <p>Focamos em oferecer reforço escolar e atividades extracurriculares para garantir um futuro promissor para as novas gerações.</p>
+                    <a href="#" class="saiba-mais">Saiba Mais</a>
+                </article>
 
-            <article class="projeto">
-                <h3>Saúde e Bem-Estar Comunitário</h3>
-                <figure>
-                    <img src="img/projeto-saude.jpg" alt="Profissional de saúde atendendo a comunidade">
-                    <figcaption>Promovendo a saúde básica e o bem-estar.</figcaption>
-                </figure>
-                <p>Realizamos mutirões de saúde, palestras de prevenção e distribuição de kits de higiene em áreas carentes.</p>
-                <a href="#" class="saiba-mais">Saiba Mais</a>
-            </article>
+                <article class="projeto">
+                    <h3>Saúde e Bem-Estar Comunitário</h3>
+                    <figure>
+                        <img src="img/projeto-saude.jpg" alt="Profissional de saúde atendendo a comunidade">
+                        <figcaption>Promovendo a saúde básica e o bem-estar.</figcaption>
+                    </figure>
+                    <p>Realizamos mutirões de saúde, palestras de prevenção e distribuição de kits de higiene em áreas carentes.</p>
+                    <a href="#" class="saiba-mais">Saiba Mais</a>
+                </article>
+            </div>    
         </section>
 
         <section id="voluntariado" aria-labelledby="voluntariado-heading">
-            <h2 id="voluntariado-heading">Seja um Voluntário Transformador</h2>
-            <p>Sua ajuda é essencial! Descubra como você pode dedicar seu tempo e talento aos nossos projetos.</p>
-            
-            <div class="oportunidades">
-                <article class="oportunidade">
-                    <h4>Voluntário Educacional</h4>
-                    <p>Auxilie nas aulas de reforço e oficinas de leitura.</p>
-                </article>
-                <article class="oportunidade">
-                    <h4>Voluntário de Eventos</h4>
-                    <p>Ajude na organização e execução de nossos eventos de captação de recursos.</p>
-                </article>
-            </div>
-            <a href="cadastro.html" class="cta-button">Inscreva-se como Voluntário</a>
-            <img src="img/voluntariado.jpg" alt="Grupo de voluntários trabalhando juntos">
+            <div class="container">
+                <h2 id="voluntariado-heading">Seja um Voluntário Transformador</h2>
+                <p>Sua ajuda é essencial! Descubra como você pode dedicar seu tempo e talento aos nossos projetos.</p>
+
+                <div class="oportunidades">
+                    <article class="oportunidade">
+                        <h4>Voluntário Educacional</h4>
+                        <p>Auxilie nas aulas de reforço e oficinas de leitura.</p>
+                    </article>
+                    <article class="oportunidade">
+                        <h4>Voluntário de Eventos</h4>
+                        <p>Ajude na organização e execução de nossos eventos de captação de recursos.</p>
+                    </article>
+                </div>
+                <a href="cadastro.html" class="cta-button">Inscreva-se como Voluntário</a>
+            </div>    
         </section>
 
         <section id="doacoes" aria-labelledby="doacoes-heading">
-            <h2 id="doacoes-heading">Faça uma Doação e Multiplique o Impacto</h2>
-            <p>Toda doação, de qualquer valor, nos ajuda a manter e expandir nossas atividades.</p>
-            
-            <aside class="doacao-info">
-                <p>Sua doação é segura e transparente. Prestamos contas de cada centavo investido.</p>
-                <img src="img/seguranca.png" alt="Ícone de transparência e segurança">
-            </aside>
+            <div class="container">
+                <h2 id="doacoes-heading">Faça uma Doação e Multiplique o Impacto</h2>
+                <p>Toda doação, de qualquer valor, nos ajuda a manter e expandir nossas atividades.</p>
 
-            <a href="#" class="cta-button">Doar Agora</a>
+                <aside class="doacao-info">
+                    <p>Sua doação é segura e transparente. Prestamos contas de cada centavo investido.</p>
+                    <img src="img/seguranca.png" alt="Ícone de transparência e segurança">
+                </aside>
+
+                <a href="#" class="cta-button">Doar Agora</a>
+            </div>    
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 ONG Solidária. Todos os direitos reservados.</p>
-        <nav aria-label="Links de Rodapé">
-            <ul>
-                <li><a href="#">Política de Privacidade</a></li>
-                <li><a href="#">Termos de Uso</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <p>&copy; 2025 ONG Solidária. Todos os direitos reservados.</p>
+            <nav aria-label="Links de Rodapé">
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </nav>
+        </div>    
     </footer>
 </body>
 </html>
