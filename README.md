@@ -38,6 +38,18 @@ Este repositório contém a solução para a **Experiência Prática I** da disc
     *   **Badges e Tags:** Implementação de classes `.badge` para categorização.
 5.  **CSS Organizados:** O arquivo `css/style.css` contém todos os estilos de forma organizada e comentada.
 
+## Requisitos Atendidos (Entrega III - JavaScript)
+
+1.  **Código JavaScript Modular:** O código está organizado em módulos (`main.js`, `router.js`, `templates.js`, `formValidation.js`) dentro da pasta `js/`.
+2.  **Manipulação do DOM:** O sistema SPA e a validação de formulário manipulam o DOM para exibir conteúdo e mensagens de feedback.
+3.  **Sistema de Single Page Application (SPA) Básico:** Implementado em `js/router.js`, que intercepta cliques nos links de navegação e carrega o conteúdo real da tag `<main>` das páginas HTML, simulando o carregamento dinâmico.
+4.  **Sistema de Templates JavaScript:** Implementado em `js/templates.js`, que contém funções para gerar HTML de componentes reutilizáveis (ex: `createProjectCard`, `createAlert`).
+5.  **Sistema de Verificação de Consistência de Dados em Formulários:** Implementado em `js/formValidation.js`, que:
+    *   Verifica a validação nativa do HTML5.
+    *   Adiciona uma **verificação de consistência** adicional para CPF e Telefone.
+    *   Exibe um **aviso ao usuário de preenchimento incorreto** (usando o template de alerta) no topo do formulário.
+
+
 ## Estrutura do Projeto
 
 ```
@@ -48,6 +60,11 @@ Este repositório contém a solução para a **Experiência Prática I** da disc
 ├── README.md
 ├── css/
 │   └── style.css <-- Arquivo com todo o CSS da Entrega II
-└── img/
-    └── ... (arquivos de imagem)
+├── img/
+│   └── ... (arquivos de imagem)
+└── js/
+    ├── main.js
+    ├── router.js
+    ├── templates.js
+    └── formValidation.js
 ```
